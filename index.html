@@ -3,21 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Dump 1</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/02945b23e4.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-
-
-<nav class="navbar bg-light">
-    <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">Symfony Demo Application</span>
+<div class="navibar">
+    <div class="container">
+        <div class="home">
+            <p>Symfony Demo Application</p>
+            <p  class="imgLogo " ><i class="fa-solid fa-house px-2"></i>Homepage</p>
+        </div>
     </div>
-</nav>
+</div>
+
+<div class="container ">
+    <div class="sign d-flex">
+        <div class="signIn col-3 p-3 rounded">
+            <p class="fs-4 colorBack"><i class="fs-5 fa-solid fa-lock p-2"></i>Secure Sign In</p>
+            <label class="p-2" for="name">Nom:</label><br><input  type="text" name="nom" id="name" value="Anna_admin">
+            <label class="p-2" for="motDePasse">Mot de passe:</label><input type="password" name="mdp" id="motDePasse" value="bouh!!">
+            <p><button type="submit" class="btn bouton m-2"><i class="fa-solid fa-right-to-bracket"></i> Sign in</button></p>
+        </div>
 
 
 
-</nav>
+        <div class="try  col-6">
+            <div class="tryEither">
+                <p class="entete fs-4"><i class="fa-solid fa-arrow-left"></i> Essayez plutot l'un de ces utilisateurs</p>
+                <p>
+
+                <table class="table table-striped-columns tableau">
+                <tbody>
+                <tr>
+                    <td><strong>Utilisateur</strong></td>
+                    <td><strong>Mot de passe</strong></td>
+                    <td><strong>Role</strong></td>
+                </tr>
+                <tr>
+                    <td>john_utilisateur</td>
+                    <td>Chaton</td>
+                    <td><span class="no">Role_Utilisateur </span>(Utilisateur Normal)</td>
+                </tr>
+                <tr>
+                    <td>Anna_admin</td>
+                    <td>Chaton</td>
+                    <td><span class="no">Role_Admin </span>(Administrateur)</td>
+                </tr>
+                </tbody>
+
+            </table>
+
+                </p>
+
+                <div class="card">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>
+                            <h5>
+                                <span class="badge bg-success ">Note
+                                </span>
+                                    <span  class="entete">
+                                        Si ces utilisateurs ne marchent pas, veuillez utiliser la commande ci-dessous dans le terminal:
+                                    </span>
+                            </h5>
+                                <div class="none">$ php app/console doctrine:fixture:load
+                                </div>
+                        </p>
+                            <p>
+                                <h5>
+                                    <span class="badge bg-success ">Tip
+                                    </span>
+
+                                        <span  class="entete">
+                                            Si vous voulez créer de nouveaux utilisateurs, utilisez cette commande:
+                                        </span>
+                                </h5>
+                            <div class="none">$ php app/console app:add-user
+                            </div>
+                        </p>
+
+                    </blockquote>
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>
