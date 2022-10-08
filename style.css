@@ -71,3 +71,76 @@ body{
     color: rgba(42,52,80,0.89);
 
 }
+
+.colorBadge{
+    background-color: rgba(0,156,173,0.56);
+
+}
+
+.infoColor{
+    background-color: rgba(80,78,81,0.20);
+    height: 30vh;
+}
+.information{
+    width: 30vh;
+    color: rgba(0,90,107,0.70);
+}
+
+.linkSymfony{
+    color: rgba(0,156,173,0.56);
+    text-decoration: none;
+}
+.linkSymfony:hover{
+    color: rgba(0,90,107,0.70);
+}
+
+.gras{
+    font-weight: bolder;
+}
+
+.boutonSource{
+    padding-right: 3vw;
+    background-color: rgba(0,0,0,0.3);
+    border: none;
+}
+
+.boutonSource:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.codeSource{
+    padding-left: 1vw;
+}
+
+.source{
+    padding-top: 1.5vh;
+    padding-right: 3vw;
+    padding-bottom: 1.5vh;
+}
+
+.footer{
+    height: 10vh;
+    background-color: lightgray;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.copyright{
+    padding-top: 2vh;
+    margin-bottom: 0;
+}
+
+.licence{
+    padding-bottom: 2vh;
+}
+.homeModif{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logoImg{
+    padding-top: 3.5vh;
+    padding-left: 1.5vw;
+}
